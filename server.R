@@ -65,7 +65,7 @@ shinyServer(
     })
     output$fatality_EF_Plot<- renderPlot({
       ggplot(subset(data,FSCALE%in%input$ef), aes(x=Year, y=FATALITIES, fill=as.factor(FSCALE)))+
-        geom_bar(width = 1, stat = "identity") +ggtitle("Fatalites by Year by Intensity") +
+        geom_bar(width = 1, stat = "identity") +ggtitle("Fatalities by Year by Intensity") +
         labs(x="Year",y="Injures")  
     })    
     

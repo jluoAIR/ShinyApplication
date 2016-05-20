@@ -35,12 +35,12 @@ shinyUI(
                           h4('The intensity of the tornado to be studied:'),
                           verbatimTextOutput("oef")  
                         ))),
-             tabPanel("Fatalites and Injuries",
+             tabPanel("Fatalities and Injuries",
                       mainPanel(
                         h3('Tornado-Related Deaths and Injuries in USA'),
-                        h4('The Fatalites from Tornado across the Year by Intensities'),
+                        h4('The Fatalities from Tornado across the Year by Intensities'),
                         plotOutput('fatality_EF_Plot'),
-                        h4('The Fatalites from Tornado by Intensities'),
+                        h4('The Fatalities from Tornado by Intensities'),
                         plotOutput('fatalityPlot'),
                         h4('The Injuries from Tornado across the Year by Intensities'),
                         plotOutput('injury_EF_Plot'),
